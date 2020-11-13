@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./static/js/all.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        .back{
+            width:100%;
+            color:white;
+            height:50px;
+            background-color:rgb(2, 5, 5);
+            padding-top: 10px;
+            position: fixed;
+            top:0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul li{
+            display:flex;
+            margin:30px;
+        }
+        ul li div{
+            margin-left: 20px;
+            
+
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li p{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "back">
+            <span class = "back-icon"><a href = "index.html"><i class = "fas fa-arrow-circle-left fa-3x"></i></a></span>
+            <h1>Most Downloaded songs</h1>
+        </div>
+    </header>
+    <ul id = "most-downloaded-list"> 
+
+    </ul>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/music.js"></script>
+    <script src="./static/js/most-downloaded.js"></script>
+</body>
+</html>

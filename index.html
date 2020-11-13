@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <script src="./static/js/all.min.js"></script>
+    <title>Muziq</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "nav-item">
+                <div class = "logo">
+                    <div><i class = "fas fa-music fa-2x"> </i></div>
+                    <div><h3>Muziq</h3></div>
+                </div>
+            </div>
+            <div class = "nav-item">
+                <ul class = "nav-list">
+                    <li><a href="index.html" class = "active-link"><i class = "fas fa-home"> </i> Home</a></li>
+                    <li><a href="trending.html"><i class = "fas fa-burn"> </i> Trending</a>                    </li>
+                    <li><a href=""><i class = "fas fa-download"> </i> Download <i class = "fas fa-angle-down"></i></a> 
+                        <ul class = "drop-nav">
+                            <li><a href="most-downloaded.html">Most downloaded</a></li>
+                            <li><a href="index.html">Recently downloaded</a></li>
+                        </ul></li>
+                    <li ><button class = "btn btn-outline" id = "sign-up"><a href="">Sign Up</a></button> <span style = "color:magenta"> | </span> <button class = "btn btn-fill" id = "login"><a href="">login</a></button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class = "showcase">
+            <h1><i class = "fas fa-music"> </i> Muziq</h1>
+            <h1 id = "music-slogan">Life is one grand, sweet song, so start the music</h1>
+        </section>
+    </header>
+
+    <!-- modal login -->
+
+    <div class = "modal modal-form" id = "login-form">
+        <form action="" method="post">
+            <div class = "close">
+                <h1>&times</h1>
+            </div>
+            <table>
+                <caption>Login</caption>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type = "email" placeholder="email address"/></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type = "password" placeholder="password"/></td>
+                </tr>
+            </table>
+            <div class = "form-button">
+                <p>no account yet? <a href="" id = "sign-up-link">sign up</a> | </p>
+                <button>Login</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- modal sign up -->
+    <div class = "modal modal-form" id = "signup-form">
+        <form action="" method="post">
+            <div class = "close">
+                <h1>&times</h1>
+            </div>
+            <table>
+                <caption>Login</caption>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type = "email" placeholder="email address"/></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type = "password" placeholder="password"/></td>
+                </tr>
+                <tr>
+                    <th>Confirm Password:</th>
+                    <td><input type = "password" placeholder="password"/></td>
+                </tr>
+            </table>
+            <div class = "form-button">
+                <p>Already have account? <a href="" id = "login-link">Login</a> | </p>
+                <button>Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- This is the background displayed when the modal is active -->
+    <div class = "exit-modal">
+    </div>
+
+
+    <div class = "container-fluid">
+        <div class = "music-list">
+            <ul id = "music-list" class = "music-ul">
+            </ul>
+        </div>
+    </div>
+    
+
+    <footer >
+        <div class = "footer-wrapper">
+            <div class = "footer-container">
+                <div>
+                    <fieldset class = "contacts">
+                        <legend>Contacts</legend>
+                        Customer Care Desk: <br>
+                        Mafangano street <br>
+                        tel <a href="tel:+254715892947">+254715892947</a>
+                        <br><br>
+                        follow us on:
+                        <div class = "social-media">
+                            <a href=""><i class = "fab fa-facebook"></i></a>
+                            <a href=""><i class = "fab fa-instagram"></i></a>
+                            <a href=""><i class = "fab fa-twitter"></i></a>
+                            <a href=""><i class = "fab fa-linkedin"></i></a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class = "copyright">
+                <p>
+                    <audio controls>
+                        <source src="./static/music/OneLove.MP3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    &copy copyright 2020 all rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/music.js"></script>
+    <script src="./static/js/index.js"></script>
+</body>
+</html>

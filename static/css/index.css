@@ -1,0 +1,294 @@
+*{
+    margin:0px;
+}
+
+.logo{
+    background-color: rgb(41, 128, 0,0.9);
+    width:100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    padding:20px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+nav{
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    background-color: rgb(2, 5, 5);
+    z-index: 2;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+.nav-list li{
+    padding: 20px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color:rgba(255, 0, 255);
+}
+.nav-list li a:hover{
+    color:whitesmoke;
+}
+
+.drop-nav{
+    list-style-type: none;
+    position:absolute;
+    transform: translateY(-200%);
+    transition: transform 0.5s;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: 80px;
+    color: none;
+}
+.drop-nav li{
+    padding:10px;
+}
+
+li:hover .drop-nav{
+    display:block; 
+    transform: translateY(0%);
+    transition: transform 0.5s;
+}
+.drop-nav a:hover{
+    color:black !important;
+}
+
+.btn{
+    border-radius: 10px;
+    width:80px;
+    height:30px;
+}
+.btn.btn-outline{
+    border: 1px solid magenta;
+    background-color: black;
+}
+.btn.btn-outline:hover{
+    background-color: magenta;
+}
+.btn.btn-outline:hover a{
+    color:white;
+}
+.btn.btn-fill{
+    background-color: black;
+    border: 1px solid white;
+}
+.btn.btn-fill:hover{
+    background-color: white;
+}
+.btn.btn-fill a{
+    color:white;
+}
+.btn.btn-fill:hover a{
+    color:magenta;
+}
+
+
+.container-fluid{
+    width: 100%;
+    background-image: linear-gradient(rgb(2, 5, 5) 2%, rgba(255, 0, 255));
+    padding-top:70px;
+    padding-bottom:70px;
+    margin-bottom: 0px;
+}
+.showcase{
+    position:relative;
+    z-index:1;
+    top:60px;
+    height:300px;
+    width:100%;
+    margin:0px;
+    background-image: url("../images/music.jpeg");
+    padding:30px;
+    animation: fade-in 4s ease;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
+.showcase h1{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    animation: transit 4s;
+}
+
+@keyframes transit {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.music-ul{
+    animation: drop 4s linear;
+}
+
+@keyframes drop {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.music-list .music-ul li{
+    display: flex;
+    list-style-type: none;
+    width: 90%;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(58, 53, 53);
+    padding:20px;
+    background-color: white;
+}
+.thumbnail{
+    width:200px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(58, 53, 53);
+    margin-right: 10px;
+}
+.song-title{
+    color: blue;
+    cursor: pointer;
+}
+.song-title:hover{
+    text-decoration: underline;
+}
+.song-details{
+    display:block;
+}
+footer{
+    background-color: magenta;
+}
+.footer-wrapper{
+    height:250px;
+    width:100%;
+    background-color: rgb(2, 5, 5);
+    padding-top:30px;
+    border-radius: 10px 10px 0px 0px;
+}
+.footer-container{
+    height:90%;
+    color:rgba(255, 255, 255, 0.5);
+    display:flex;
+}
+.footer-container fieldset{
+    border:none;
+    text-align: center;
+    padding-top:10px;
+}
+.footer-container fieldset legend{
+    color: magenta;
+    align-self: center;
+    text-decoration: underline;
+    margin:auto;
+}
+footer .copyright{
+    text-align: center;
+}
+footer .copyright p{
+    color: red;
+}
+.social-media{
+    width:100%;
+    padding-top:20px;
+}
+.social-media a{
+    padding:10px;
+    font-size: 30px;;
+}
+
+.song-additives{
+    margin:10px 40px;
+    width:200px;
+    display: flex;
+    justify-content: space-around;
+}
+.song-additives a{
+    padding:5px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.song-additives a:hover{
+    background-color:black;
+    color:red;
+}
+
+.modal{
+    height: 400px;
+    width: 300;
+    margin-left:calc(50% - 150px);
+    z-index:1000;
+    position:fixed;
+    top:calc(50% - 200px);
+    background-color: white;
+    border-radius: 10px;
+    padding:20px;
+    display:none;
+}
+
+.exit-modal{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    background-color: rgb(0, 0, 0,0.8);
+    z-index:500;
+    display:none;
+}
+
+caption{
+    font-size:20px;
+    font-weight: bold;
+    padding-bottom:30px;
+}
+.modal-form th{
+    text-align: end;
+}
+.modal-form td, .modal-form th{ 
+    padding-top: 20px;
+}
+.close{
+    text-align: end;
+}
+.close h1{
+    color: red;
+    cursor: pointer;
+}
+.form-button{
+    padding-top:20px;
+    display:flex;
+    justify-content: end;
+}
+.form-button button{
+    background-color: green;
+    padding:3px 10px 3px 10px;
+    border-radius: 10px;
+    color:white;
+    border-color: none;
+    margin-left:20px;
+}
+.active-link{
+    color:white !important;
+}
+audio{
+    background-color: red;
+    border-radius: 5px;
+    color:black;
+}

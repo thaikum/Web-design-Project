@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <script src="./static/js/all.min.js"></script>
+    <style>
+        .showcase h1{
+            color:magenta;
+        }
+        .back{
+            width:100%;
+            color:white;
+            height:50px;
+            background-color: rgb(2, 5, 5);
+            padding-top: 10px;
+            position: fixed;
+            top:0px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+    <title>Music:Trending</title>
+</head>
+<body>
+    <header>
+        <div class = "back">
+            <a href = "index.html"><i class = "fas fa-arrow-circle-left fa-2x"></i></a>
+            <h1>Trending Music</h1>
+        </div>
+    </header>
+
+
+    <div class = "container-fluid">
+        <div class = "music-list">
+            <ul id = "trending-music-list" class = "music-ul">
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/music.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/trending.js"></script>
+
+</body>
+</html>
